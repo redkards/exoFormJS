@@ -1,0 +1,20 @@
+#nomError {
+  display: none;
+  color: red;
+}
+
+#prenomError {
+  color: red;
+}
+
+#mailError {
+  color: red;
+}
+
+#telError {
+  color: red;
+}
+.danger {
+  display: none;
+  color: green;
+}

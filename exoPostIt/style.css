@@ -1,0 +1,18 @@
+.postIt {
+  min-height: 100px;
+  width: 300px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.survol {
+  font-size: 1.2rem;
+}
+
+#p2 {
+  background-color: aquamarine;
+  width: 300px;
+}

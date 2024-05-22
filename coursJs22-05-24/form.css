@@ -1,0 +1,33 @@
+.formulaires {
+  display: block;
+  margin: 25px;
+  padding: 25px;
+}
+
+form {
+  margin: 25px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nomError {
+  visibility: hidden;
+}
+
+#prenomError {
+  visibility: hidden;
+}
+
+#mailError {
+  visibility: hidden;
+}
+
+#telError {
+  visibility: hidden;
+}
+
+p {
+  visibility: visible;
+}
