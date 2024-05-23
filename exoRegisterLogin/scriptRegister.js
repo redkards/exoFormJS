@@ -74,15 +74,21 @@ function formSubmit(event) {
   }
   if (confirme === mdp && confirme != "") {
     console.log("true");
-    confirmMdpError.style.display = "none";
+    confirmError.style.display = "none";
     event.preventDefault();
   } else {
-    confirmMdpError.style.display = "block";
+    confirmError.style.display = "block";
     console.log("false");
     isValid = false;
     event.preventDefault();
   }
   if (isValid) {
+    localStorage.setItem("nom", nom);
+    localStorage.setItem("prenom", prenom);
+    localStorage.setItem("email", mail);
+    localStorage.setItem("mdp", mdp);
     alert("compte créé");
   }
 }
+
+console.log(localStorage);
