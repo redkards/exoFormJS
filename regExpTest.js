@@ -39,7 +39,7 @@
 // console.log(texte2);
 
 let essai = /\d/g;
-let nom = "51848";
+let nom = "uih";
 
 if (essai.test(nom)) {
   console.log("good");
