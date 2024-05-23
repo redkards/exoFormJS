@@ -4,7 +4,7 @@ let nom = document.getElementById("nom").value;
 let prenom = document.getElementById("prenom").value;
 let mail = document.getElementById("email").value;
 let mdp = document.getElementById("mdp").value;
-let confirme = document.getElementById("confirmmdp").value;
+let confirme = document.getElementById("confirmMdp").value;
 let danger = document.querySelector(".danger");
 let envoyer = document.getElementById("envoyer");
 let nomError = document.getElementById("nomError");
@@ -27,6 +27,7 @@ function formSubmit(event) {
   prenom = document.getElementById("prenom").value;
   mail = document.getElementById("email").value;
   mdp = document.getElementById("mdp").value;
+  confirme = document.getElementById("confirmMdp").value;
   envoyer = document.getElementById("envoyer");
   console.log(nom, prenom, mail, mdp);
 
@@ -72,7 +73,7 @@ function formSubmit(event) {
     isValid = false;
     event.preventDefault();
   }
-  if (confirme === mdp && confirme != "") {
+  if (verifmdp.test(mdp)) {
     console.log("true");
     confirmError.style.display = "none";
     event.preventDefault();
@@ -82,13 +83,18 @@ function formSubmit(event) {
     isValid = false;
     event.preventDefault();
   }
+
   if (isValid) {
-    localStorage.setItem("nom", nom);
-    localStorage.setItem("prenom", prenom);
-    localStorage.setItem("email", mail);
-    localStorage.setItem("mdp", mdp);
+    localStorage.setItem("lastName", nom);
+    localStorage.setItem("firstName", prenom);
+    localStorage.setItem("adresseMail", mail);
+    localStorage.setItem("password", mdp);
+    localStorage.setItem("confirmPassword", confirme);
     alert("compte créé");
   }
 }
 
 console.log(localStorage);
+
+console.log(nom);
+console.log(prenom);

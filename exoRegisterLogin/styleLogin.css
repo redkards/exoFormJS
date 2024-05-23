@@ -18,12 +18,12 @@ form {
   padding: 10px;
 }
 
-#mailError {
+#adresseEmailError {
   display: none;
   color: rgb(72, 9, 219);
 }
 
-#mdpError {
+#passError {
   display: none;
   color: rgb(223, 210, 36);
 }
