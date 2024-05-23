@@ -29,6 +29,7 @@ function formSubmit(event) {
   mdp = document.getElementById("mdp").value;
   confirme = document.getElementById("confirmMdp").value;
   envoyer = document.getElementById("envoyer");
+
   console.log(nom, prenom, mail, mdp);
 
   if (verif.test(nom) && nom != "") {

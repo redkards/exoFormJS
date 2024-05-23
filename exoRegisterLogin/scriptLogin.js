@@ -1,22 +1,21 @@
 let adressMail = document.getElementById("adresseEmail").value;
-let pass = document.getElementById("pass").value;
-// let stockMail = localStorage.getItem(mail);
-// let stockMdp = localStorage.getItem(mdp);
+let passw = document.getElementById("pass").value;
+let verifAdress = localStorage.getItem("adresseMail");
+let verifPassword = localStorage.getItem("password");
 
 let verifmail = /^([a-z0-9.+-_])+@([a-z0-9.+-_])+\.([A-Za-z]{2,4})/;
 
 let verifmdp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{10,}$/;
 
 console.log(localStorage);
-console.log("adressMail");
-
-console.log("pass");
 
 function VerifData(action) {
   adressMail = document.getElementById("adresseEmail").value;
-  pass = document.getElementById("pass").value;
+  passw = document.getElementById("pass").value;
 
-  if (verifmail.test(adressMail)) {
+  console.log(adressMail, passw);
+
+  if (adressMail === verifAdress) {
     console.log(yesssss);
     action.preventDefault();
   } else {
@@ -24,7 +23,7 @@ function VerifData(action) {
     action.preventDefault();
   }
 
-  if (verifmail.test(pass)) {
+  if (passw === verifPassword) {
     console.log(okkkkkkkkkkkk);
     action.preventDefault();
   } else {
@@ -35,4 +34,4 @@ function VerifData(action) {
 
 console.log(adressMail);
 
-console.log(pass);
+console.log(passw);
