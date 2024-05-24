@@ -93,6 +93,12 @@ function formSubmit(event) {
     localStorage.setItem("confirmPassword", confirme);
     alert("compte créé");
   }
+  let user = {
+    nom: nom,
+    mail: mail,
+  };
+
+  localStorage.setItem("dataUser", JSON.stringify(user));
 }
 
 console.log(localStorage);

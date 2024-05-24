@@ -1,0 +1,23 @@
+nav {
+  min-height: 10vh;
+  width: 50vw;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+}
+
+button a {
+  text-decoration: none;
+  color: rgb(236, 169, 157);
+  background-color: brown;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.adMail {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

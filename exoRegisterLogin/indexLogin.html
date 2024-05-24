@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>exo login</title>
-    <link rel="stylesheet" href="styleLogin.css" />
-  </head>
 
-  <body>
-    <nav>
-      <button><a href="./indexRegister.html">connexion register</a></button>
-    </nav>
-    <h1>LOGIN</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login</title>
+  <link rel="stylesheet" href="styleLogin.css" />
+</head>
 
-    <div class="formulaires">
-      <form action="">
-        <div class="question">
-          <label for="adresseEmail">mail</label>
-          <input
-            type="text"
-            name="adresseEmail"
-            id="adresseEmail"
-            placeholder="Votre mail"
-          />
-          <p class="danger" id="adresseEmailError">
-            votre saisie est incorrecte
-          </p>
-        </div>
+<body>
+  <nav>
+    <button><a href="./indexRegister.html">connexion register</a></button>
+    <button><a href="./affichage.html">connexionAffichage</a></button>
+  </nav>
+  <h1>LOGIN</h1>
 
-        <br />
-        <div class="question">
-          <label for="pass">mot de passe</label>
-          <input type="text" name="pass" id="pass" placeholder="Votre mdp" />
-          <p class="danger" id="passError">votre saisie est incorrecte</p>
-        </div>
-        <br />
+  <div class="formulaires">
+    <form action="">
+      <div class="question">
+        <label for="adresseEmail">mail</label>
+        <input type="text" name="adresseEmail" id="adresseEmail" placeholder="Votre mail" />
+        <p class="danger" id="adresseEmailError">
+          votre saisie est incorrecte
+        </p>
+      </div>
 
-        <div class="question">
-          <label for="envoyer"></label>
-          <input
-            type="submit"
-            id="envoyer"
-            onclick="verifData(action)"
-            value="envoyer"
-          />
-        </div>
-      </form>
-    </div>
+      <br />
+      <div class="question">
+        <label for="pass">mot de passe</label>
+        <input type="text" name="pass" id="pass" placeholder="Votre mdp" />
+        <p class="danger" id="passError">votre saisie est incorrecte</p>
+      </div>
+      <br />
 
-    <script src="scriptLogin.js"></script>
-  </body>
+      <div class="question">
+        <label for="envoyer"></label>
+        <input type="submit" id="envoyer" onclick="VerifData(event)" value="envoyer" />
+      </div>
+    </form>
+  </div>
+
+  <script src="scriptLogin.js"></script>
+</body>
+
 </html>
